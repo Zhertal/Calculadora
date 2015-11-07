@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Acordeón</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="funciones.js"></script>
+    </head>
+    
+    <body>
+        <p id="acordeon"></p>
+        <button id="regresar" onclick="regresar()">Regresar</button>
+    </body>
+    
+    <script>
+        window.addEventListener('load',cargarAcordeon,true);
+    </script>
+        
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            background-color: black;
+        }
+        p
+        {
+            color: white;
+        }
+        button
+        {
+            background-color: dodgerblue;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 700;
+            width: 97%;
+            height: 35px;
+            margin-left: 1.5%;
+            margin-top: 3px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</html>

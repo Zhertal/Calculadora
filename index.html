@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="funciones.js"></script>
+    </head>
+    
+    <body>
+        <div id="resultado">
+        </div>
+        
+            <button id="secreto" onclick="acordeon()"></button>
+            <button class="simbolos" onclick="borrar()">C</button>
+            <button class="numeros" onclick="agregarNumero(7)">7</button>
+            <button class="numeros" onclick="agregarNumero(8)">8</button>
+            <button class="numeros" onclick="agregarNumero(9)">9</button>
+            <button class="simbolos" onclick="agregarNumero('/')">/</button>
+            <button class="numeros" onclick="agregarNumero(4)">4</button>
+            <button class="numeros" onclick="agregarNumero(5)">5</button>
+            <button class="numeros" onclick="agregarNumero(6)">6</button>
+            <button class="simbolos" onclick="agregarNumero('*')">X</button>
+            <button class="numeros" onclick="agregarNumero(1)">1</button>
+            <button class="numeros" onclick="agregarNumero(2)">2</button>
+            <button class="numeros" onclick="agregarNumero(3)">3</button>
+            <button class="simbolos" onclick="agregarNumero('-')">-</button>
+            <button class="numeros" onclick="agregarNumero(0)">0</button>
+            <button class="simbolos" onclick="agregarNumero('.')">.</button>
+            <button class="simbolos" onclick="igual()">=</button>
+            <button class="simbolos" onclick="agregarNumero('+')">+</button>
+    </body>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            background-color: black;
+        }
+        #resultado
+        {
+            height: 25%;
+        }
+        .simbolos
+        {
+            float: left;
+            width: 23%;
+            height: 14%;
+            font-size: 40px;
+            color: whitesmoke;
+            margin-left: 1.5%;
+            margin-top: 1.5%;
+            background-color: #3f3f3f;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .numeros
+        {
+            background-color: dimgray;
+            float: left;
+            width: 23%;
+            height: 14%;
+            font-size: 40px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 1.5%;
+            margin-top: 1.5%;
+            outline: none;
+        }
+        #secreto
+        {
+            float: left;
+            width: 72%;
+            height: 14%;
+            margin-left: 1.5%;
+            margin-top: 1.5%;
+            background-color: #3f3f3f;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        #pantalla
+        {
+            float: left;
+            width: 97%;
+            height: 25%;
+            margin-left: 1.5%;
+        }
+        div
+        {
+            color: white;
+            text-align: right;
+            font-size: 50px;
+            width: 97%;
+            margin-left: 1.5%;
+        }
+    </style>
+
+
+</html>
